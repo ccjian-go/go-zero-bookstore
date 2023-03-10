@@ -1,0 +1,15 @@
+Name: check.rpc
+ListenOn: 0.0.0.0:8081
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: check.rpc
+
+DataSource: root:123456@tcp(192.168.191.132:3306)/gozero
+# mysql链接地址，满足 $user:$password@tcp($ip:$port)/$db?$queries 格式即可
+Table: book
+Cache:
+  - Host: 192.168.191.132:6379
+    Type: node
+    Pass: "123456"
+

@@ -1,0 +1,8 @@
+
+### GET request with a header
+GET http://localhost:8888/add?book=go-zero&price=10
+Accept: application/json
+
+### GET request with a header
+GET http://localhost:8888/check?book=go-zero
+Accept: application/json
